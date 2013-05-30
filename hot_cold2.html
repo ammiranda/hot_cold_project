@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>
+		Hot and Cold Game!
+	</title>
+	<link rel="stylesheet" href="hot_cold.css" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript">
+	var x = 5;
+	var y = 5;
+	function randomNumGen () {
+	var x = Math.floor((Math.random() * 10) + 1);;
+	var y = prompt("Guess a number between 1 and 10!");
+	alert(x);
+	for (var i = 3; i > 0; i--){
+	if ( x == y ) {
+		alert("You got it!")
+		break;
+		}
+	else if ( x > y && y <=10 && y >= 1) {
+		var y = prompt("Guess higher! Attempts left: " + i);
+		}
+	else if ( x < y && y <=10 && y >= 1) {
+		var y = prompt("Guess lower! Attempts left: " + i);
+		;
+		}
+	else {
+		var y = prompt("Guess a number between 1 and 10!  You only have " + i + " attempts left!");
+		};
+		}
+		if (i == 0) {	
+		alert("Ran out of attempts! :(");
+		}
+		};
+	window.onload = randomNumGen;
+	</script>
+	
+</header>
+
+<body>
+	<div class="background">
+	</div>
+	<div class="greeter">
+		<h1><span class="hot">Hot</span> and <span class="cold">Cold</span>!</h1>
+		<p>Guess a number between 1 and 10!</p>
+	</div>

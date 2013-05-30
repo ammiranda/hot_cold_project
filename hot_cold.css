@@ -1,0 +1,27 @@
+.greeter {
+	text-align: center;
+	background-color: #C0C0C0
+	height: 60px;
+	width: 300px;
+	position: relative;
+	top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+h1 {
+	font-size: 90px;
+	}
+span.hot {
+	color: #FF0000;
+	font-style: italic;
+	font-family: Zapf Chancery, cursive;
+	}
+span.cold {
+	color: #0066CC;
+	font-style: normal;
+	font-weight: 700px;
+	font-family: Avantgarde, sans-serif;
+	}
+.greeter p {
+	font-size: 50px;
+	}
