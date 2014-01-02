@@ -8,6 +8,7 @@ $(document).ready(function() {
 		var answer = $('#input').val();
 		if (answers.indexOf(answer) == -1) {
 			answers.push(answer);
+			$('#guessArray').text("Previous attempts: " + answers);
 			attempts++;
 			$('#input').val("");
 			console.log(answer + " " + attempts);
