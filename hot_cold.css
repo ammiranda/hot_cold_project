@@ -17,6 +17,12 @@
 }
 
 .inner_background {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: -10px;
+	border: solid 1px black;
 	background-color: white;
 	width: 50%;
 	margin: 0 auto;
@@ -47,13 +53,13 @@ h1 span {
 }
 
 .reallyClose {
-	background-color: ;
+	background-color: #EE0000;
 }
 
 .warmish {
-	background-color: ;
+	background-color: #FF5721;
 }
 
 .realOff {
-	background-color: ;
+	background-color: #00F5FF;
 }
