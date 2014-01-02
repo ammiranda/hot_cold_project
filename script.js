@@ -7,7 +7,7 @@ $(document).ready(function() {
 		console.log(randomNumber);
 		var answer = $('#input').val();
 		if (answers.indexOf(answer) == -1) {
-			$('.background').removeClass("dasIt");
+			$('.background').removeClass("dasIt reallyClose warmish cold");
 			answers.push(answer);
 			$('#guessArray').text("Previous attempts: " + answers);
 			attempts++;
@@ -23,12 +23,15 @@ $(document).ready(function() {
 			alert("Das it!");
 		}
 		else if (guessDiff > 0 && guessDiff <= 10) {
+			$('.background').addClass("reallyClose");
 			alert("Really close!");
 		}
 		else if (guessDiff > 10 && guessDiff <= 30) {
+			$('.background').addClass("warmish");
 			alert("Warmish");
 		}
 		else if (guessDiff > 30 && guessDiff <= 60) {
+			$('.background').addClass("cold");
 			alert("Cold");
 		}
 		else {
