@@ -10,19 +10,21 @@
 </header>
 
 <body>
-	<div class="background">
-	</div>
-	<div class="greeter">
-		<h1><span class="hot">Hot</span> and <span class="cold">Cold</span>!</h1>
-		<p>Guess a number between 1 and 100!</p>
-		<p id="guessArray"></p>
-		<form>
-			<input id="input" size="50px" type="number" placeholder="Enter a number from 1 to 100." required="true" autocomplete="off"/>
-			<div>
-				<button type="submit" id="submit">Submit</button>
-				<button type="reset" id="clear">Clear</button>
+	<div class="background text-center">
+		<div class="greeter">
+			<h1><span class="hot">Hot</span> and <span class="cold">Cold</span>!</h1>
+			<p>Guess a number between 1 and 100!</p>
+			<p id="guessArray"></p>
+			<div id="formContainer">
+				<form>
+					<input id="input" size="50px" type="number" placeholder="Enter a guess" required="true" autocomplete="off"/>
+					<div id="buttons">
+						<button class="btn btn-success" type="submit" id="submit">Submit</button>
+						<button class="btn btn-warning" type="reset" id="clear">Clear</button>
+					</div>
+				</form>
 			</div>
-		</form>
+		</div>
 	</div>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>

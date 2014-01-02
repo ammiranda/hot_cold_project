@@ -18,6 +18,7 @@ $(document).ready(function() {
 		}
 		var guessDiff = Math.abs(answer - randomNumber);
 		if (answer == randomNumber) {
+			$('.background').addClass("dasIt");
 			alert("Das it!");
 		}
 		else if (guessDiff > 0 && guessDiff <= 10) {

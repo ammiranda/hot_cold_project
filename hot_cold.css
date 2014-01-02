@@ -1,25 +1,31 @@
-.greeter {
-	text-align: center;
-	background-color: #C0C0C0
-	position: relative;
-	top: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	}
-h1 {
-	font-size: 90px;
-	}
-span.hot {
-	color: #FF0000;
-	font-style: italic;
-	font-family: Zapf Chancery, cursive;
-	}
-span.cold {
-	color: #0066CC;
-	font-style: normal;
-	font-weight: 700px;
-	font-family: Avantgarde, sans-serif;
-	}
-.greeter p {
-	font-size: 50px;
-	}
+.background {
+	margin: 0 auto;
+	margin-top: 50px;
+	border: 1px solid black;
+	width: 50%;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+form {
+	padding: 5px;
+}
+
+button {
+	padding: 5px;
+}
+
+#buttons {
+	margin-top: 10px;
+}
+
+.dasIt {
+	background-color: green;
+}
+
+.cold {
+	background-color: #a5f2f3;
+}
