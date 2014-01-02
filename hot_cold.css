@@ -11,6 +11,11 @@
 	background-color: white;
 }
 
+.instructions {
+	margin: 0 auto;
+	width: 30%;
+}
+
 form {
 	padding: 5px;
 }
