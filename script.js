@@ -7,6 +7,7 @@ $(document).ready(function() {
 		console.log(randomNumber);
 		var answer = $('#input').val();
 		if (answers.indexOf(answer) == -1) {
+			$('.background').removeClass("dasIt");
 			answers.push(answer);
 			$('#guessArray').text("Previous attempts: " + answers);
 			attempts++;
