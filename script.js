@@ -39,4 +39,8 @@ $(document).ready(function() {
 			alert("Really really off");
 		}
 	});
+	$('#clear').on('click', function(e) {
+		e.preventDefault();
+		$('#input').val("");
+	});
 });
