@@ -1,11 +1,35 @@
 $(document).ready(function() {
 	var randomNumber = Math.ceil(Math.random() * 100); // Generates a random number between 1 and 100
 	var attempts = 0;
+	var answers = [];
 	$('#submit').on('click', function(e) {
 		e.preventDefault();
+		console.log(randomNumber);
 		var answer = $('#input').val();
-		attempts++;
-		$('#input').val("");
-		console.log(answer + " " + attempts);
+		if (answers.indexOf(answer) == -1) {
+			answers.push(answer);
+			attempts++;
+			$('#input').val("");
+			console.log(answer + " " + attempts);
+		}
+		else {
+			alert("That number was already entered!  Try again.");
+		}
+		var guessDiff = Math.abs(answer - randomNumber);
+		if (answer == randomNumber) {
+			alert("Das it!");
+		}
+		else if (guessDiff > 0 && guessDiff <= 10) {
+			alert("Really close!");
+		}
+		else if (guessDiff > 10 && guessDiff <= 30) {
+			alert("Warmish");
+		}
+		else if (guessDiff > 30 && guessDiff <= 60) {
+			alert("Cold");
+		}
+		else {
+			alert("Really really off");
+		}
 	});
 });
