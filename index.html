@@ -12,9 +12,11 @@
 <body>
 	<div class="background text-center">
 		<div class="greeter">
-			<h1><span class="hot">Hot and Cold!</span></h1>
-			<p>Guess a number between 1 and 100!</p>
-			<p id="guessArray"></p>
+			<div class="inner_background">
+				<h1>Hot and Cold!</h1>
+				<p>Guess a number between 1 and 100!</p>
+				<p id="guessArray"></p>
+		    </div>
 			<div id="formContainer">
 				<form>
 					<input id="input" size="50px" type="number" placeholder="Enter a guess" required="true" autocomplete="off"/>
@@ -28,8 +30,8 @@
 	</div>
 	<div class="instructions text-center">
 		<h3>How to play Hot Cold</h1>
-		<p>The computer has picked a random number between 1 and 100.  Enter your guesses into the 
-			input field above.
+		<p>The browser has picked a random number between 1 and 100.  Enter your guesses into the 
+			input field above. The browser will inform you of how close your guesses are to the answer.  When you find the correct number and want to play again please refresh the page. 
 		</p>
 	</div>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>

@@ -16,6 +16,12 @@
 	width: 30%;
 }
 
+.inner_background {
+	background-color: white;
+	width: 50%;
+	margin: 0 auto;
+}
+
 form {
 	padding: 5px;
 }
@@ -45,5 +51,9 @@ h1 span {
 }
 
 .warmish {
+	background-color: ;
+}
+
+.realOff {
 	background-color: ;
 }

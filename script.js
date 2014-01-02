@@ -35,6 +35,7 @@ $(document).ready(function() {
 			alert("Cold");
 		}
 		else {
+			$('.background').addClass("realOff");
 			alert("Really really off");
 		}
 	});
