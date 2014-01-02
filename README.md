@@ -1,0 +1,1 @@
+My implementation of a Hot Cold game that I completed for the Front-end Development course I took with [Thinkful](http://www.thinkful.com).  You can play it by clicking this [link](http://http://amiranda222.github.io/hot_cold_project/).
