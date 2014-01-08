@@ -1,0 +1,65 @@
+.background {
+	margin: 0 auto;
+	margin-top: 50px;
+	border: 1px solid black;
+	width: 50%;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.instructions {
+	margin: 0 auto;
+	width: 30%;
+}
+
+.inner_background {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: -10px;
+	border: solid 1px black;
+	background-color: white;
+	width: 50%;
+	margin: 0 auto;
+}
+
+form {
+	padding: 5px;
+}
+
+button {
+	padding: 5px;
+}
+
+h1 span {
+	background-color: white;
+}
+
+#buttons {
+	margin-top: 10px;
+}
+
+.dasIt {
+	background-color: #A6D785;
+}
+
+.cold {
+	background-color: #a5f2f3;
+}
+
+.reallyClose {
+	background-color: #EE0000;
+}
+
+.warmish {
+	background-color: #FF5721;
+}
+
+.realOff {
+	background-color: #00F5FF;
+}
