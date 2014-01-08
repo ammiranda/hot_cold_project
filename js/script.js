@@ -1,4 +1,4 @@
-function scoreCheck(answer, randomNumber) {
+function scoreCheck(answer, randomNumber) {  // Function that checks how close the user is to guessing the correct number
 		var guessDiff = Math.abs(answer - randomNumber);
 		if (answer == randomNumber) {
 			$('.background').addClass("dasIt");
@@ -23,14 +23,14 @@ function scoreCheck(answer, randomNumber) {
 	};
 
 $(document).ready(function() {
-	var randomNumber = Math.ceil(Math.random() * 100); // Generates a random number between 1 and 100
+	var randomNumber = Math.ceil(Math.random() * 100); // Generates a random number between 0 and 100
 	var attempts = 0;
 	var answers = [];
 	$('#submit').on('click', function(e) {
 		e.preventDefault();
 		console.log(randomNumber);
 		var answer = parseInt($('#input').val());
-		if (answers.indexOf(answer) == -1 && typeof answer == 'number' && answer <= 100 && answer > 0) {
+		if (answers.indexOf(answer) == -1 && typeof answer == 'number' && answer <= 100 && answer >= 0) {
 			$('.background').removeClass("dasIt reallyClose warmish cold");
 			answers.push(answer);
 			$('#guessArray').text("Previous attempts: " + answers);
@@ -43,7 +43,7 @@ $(document).ready(function() {
 			alert("Please enter an integer");
 		}
 		else if (answer > 100 || answer < 0) {
-			alert("Please enter a number between 1 and 100!");
+			alert("Please enter a number between 0 and 100!");
 		}
 		else {
 			alert("That number was already entered!  Try again.");
