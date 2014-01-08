@@ -1,3 +1,5 @@
+/* Layout and Formatting */
+
 .background {
 	margin-top: 20px;
 	-webkit-border-radius: 5px;
@@ -27,6 +29,8 @@ button {
 #formContainer {
 	margin-top: 15px;
 }
+
+/* Indicator Color Classes */
 
 .dasIt {
 	background-color: #A6D785;
