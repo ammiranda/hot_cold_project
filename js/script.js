@@ -1,24 +1,25 @@
 function scoreCheck(answer, randomNumber) {  // Function that checks how close the user is to guessing the correct number
 		var guessDiff = Math.abs(answer - randomNumber);
+		$('#infoHeader').empty();
 		if (answer == randomNumber) {
 			$('.background').addClass("dasIt");
-			alert("Das it!");
+			return "Das it!";
 		}
 		else if (guessDiff > 0 && guessDiff <= 10) {
 			$('.background').addClass("reallyClose");
-			alert("Really close!");
+			return "Really close!";
 		}
 		else if (guessDiff > 10 && guessDiff <= 30) {
 			$('.background').addClass("warmish");
-			alert("Warmish");
+			return "Warmish";
 		}
 		else if (guessDiff > 30 && guessDiff <= 60) {
 			$('.background').addClass("cold");
-			alert("Cold");
+			return "Cold";
 		}
 		else {
 			$('.background').addClass("realOff");
-			alert("Really really off");
+			return "Really really off";
 		}
 	};
 
@@ -37,7 +38,7 @@ $(document).ready(function() {
 			attempts++;
 			$('#input').val("");
 			console.log(answer + " " + attempts);
-			scoreCheck(answer, randomNumber);
+			$('#infoHeader').text(scoreCheck(answer, randomNumber));
 		}
 		else if (answer == NaN) {
 			alert("Please enter an integer");
