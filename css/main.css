@@ -44,6 +44,15 @@ h1 span {
 	margin-top: 10px;
 }
 */
+
+#guessArray {
+	margin-bottom: 15px;
+}
+
+#formContainer {
+	margin-top: 15px;
+}
+
 .dasIt {
 	background-color: #A6D785;
 }
