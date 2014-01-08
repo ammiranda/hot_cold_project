@@ -1,6 +1,7 @@
 function scoreCheck(answer, randomNumber) {  // Function that checks how close the user is to guessing the correct number
 		var guessDiff = Math.abs(answer - randomNumber);
-		$('#infoHeader').empty();
+		$('#titleHeader').empty();
+		$('.infoHeader').css('color', 'white');
 		if (answer == randomNumber) {
 			$('.background').addClass("dasIt");
 			return "Das it!";
@@ -32,13 +33,12 @@ $(document).ready(function() {
 		console.log(randomNumber);
 		var answer = parseInt($('#input').val());
 		if (answers.indexOf(answer) == -1 && typeof answer == 'number' && answer <= 100 && answer >= 0) {
-			$('.background').removeClass("dasIt reallyClose warmish cold");
+			$('.background').removeClass("dasIt reallyClose warmish cold realOff");
 			answers.push(answer);
 			$('#guessArray').text("Previous attempts: " + answers);
 			attempts++;
 			$('#input').val("");
-			console.log(answer + " " + attempts);
-			$('#infoHeader').text(scoreCheck(answer, randomNumber));
+			$('#titleHeader').text(scoreCheck(answer, randomNumber));
 		}
 		else if (answer == NaN) {
 			alert("Please enter an integer");
