@@ -42,7 +42,7 @@ $(document).ready(function() {
 		else if (answer == NaN) {
 			alert("Please enter an integer");
 		}
-		else if (answer >= 100 && answer < 0) {
+		else if (answer > 100 || answer < 0) {
 			alert("Please enter a number between 1 and 100!");
 		}
 		else {
