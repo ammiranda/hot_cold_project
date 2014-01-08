@@ -5,34 +5,20 @@
 	-o-border-radius: 5px;
 	border-radius: 5px;
 }
-/*
-.instructions {
-	margin: 0 auto;
-	width: 30%;
-}
-*/
+
 .inner_background {
 	width: 50%;
 	margin: 0 auto;
-}
-/*
-
-form {
-	padding: 5px;
 }
 
 button {
 	padding: 5px;
 }
 
-h1 span {
-	background-color: white;
-}
-
 #buttons {
 	margin-top: 10px;
 }
-*/
+
 
 #guessArray {
 	margin-bottom: 15px;
